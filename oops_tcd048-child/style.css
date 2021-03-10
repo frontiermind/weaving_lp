@@ -1,0 +1,1110 @@
+/*
+Theme Name:OOPS!
+Template:oops_tcd048
+Version:1.4
+*/
+@charset "UTF-8";
+
+
+/* 共通 */
+body {
+	color: #333333;
+	counter-reset: number 0;
+	font-family: 'NotoSansCJKjp' !important;
+	font-family: "游ゴシック","Hiragino Kaku Gothic ProN", sans-serif !important;
+}
+.p-entry__body {
+	margin-bottom: auto;
+}
+@media screen and (min-width: 767px) {
+	.sp {display: none;}
+}
+@media screen and (max-width: 766px) {
+	.pc {display: none;}
+}
+
+
+/* 大見出し */
+h2 {
+	font-size: 26px !important;
+}
+/* 見出し */
+
+/* タイトル */
+.ttl,
+.business-list__item,
+.font-w
+ {
+	font-size: 26px !important;
+}
+.underline-b {
+	font-size: 22px !important;
+}
+.header-name_btn {
+	font-size: 18px;
+}
+
+/* テキスト */
+p,
+.font-m,
+.name-label,
+.wpcf7-submit {
+	font-size: 16px !important;
+}
+
+/* 小テキスト */
+.text-02, .wpcf7-list-item-label  {
+	font-size: 14px;
+}
+@media only screen and (max-width: 766px) {
+	.p-index-content02__item {
+		padding: 10px !important;
+	}
+	.l-inner .p-index-content01__catch {
+		font-size: 26px !important;
+	}
+	.p-index-content02__item .p-index-content02__item-catch {
+		font-size: 18px !important;
+	}
+
+	.p-index-content02__item .p-index-content02__item-desc,
+	.p-index-content06__item .p-index-content06__item-desc {
+		font-size: 16px !important;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	/* 大見出し */
+	h2,.font-w {
+		font-size: 36px !important;
+	}
+	/* 見出し,タイトル */
+	.ttl , .underline-b {
+		font-size: 36px !important;
+	}
+	/* contantのタイトルなど */
+	.business-list__item {
+		font-size: 26px !important;
+	}
+	/* テキスト */
+	p {font-size: 18px;}
+	.sp-br {display: none;}
+
+}
+/* @media screen and (max-width: 766px) {
+	.pc-br {
+		display: none;
+	}
+} */
+
+.clearfix {
+    display: inline-block !important;
+    width: 100%;
+}
+
+/* /共通 */
+/* .p-index-slider__item {
+	background-size: 100%;
+	background: content-box;
+    background-position-y: top;
+} */
+
+
+
+
+
+/* ヘッダー */
+.l-header--large {
+	height: auto !important;
+	line-height: 1 !important;
+}
+.l-header__inner {
+	display: block !important;
+}
+.l-header__top {
+	display: table;
+	width: 100% !important;
+}
+.l-header__logo{
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 22px;
+}
+.l-header, .l-header--large.is-active {
+	background: #fff !important;
+}
+/* ハンバーガーメニュー */
+.c-menu-button {
+    display: none !important;
+}
+
+/* header・販売代理店募集 */
+.header-name {
+	display: table-cell;
+	vertical-align: middle;
+
+}
+.header-name .header-name_btn {
+	padding: 15px 20px;
+	border-radius: 7px;
+    background: #0c58d4;
+    font-weight: 700;
+    text-align: center;
+	color: #fff;
+	
+}
+/* header・TEL */
+.header-tel {
+	display: table-cell;
+	vertical-align: middle;
+	width: 230px;
+	text-align: end;
+}
+
+.p-global-nav {
+	display: none !important;
+}
+/*767px以上で適用する内容*/
+@media screen and (min-width: 767px) {
+	.view-pc {
+		display: inline-block;
+		width: 246px;
+		padding: 20px 0;
+	}
+	.view-sp {
+		display: none !important;
+	}
+	.text-01 {
+		position: relative;
+		font-size: 18px;
+		color: #225096;
+		letter-spacing: 4px;
+	}
+	.text-01 a{
+		color: #4B4B4B;
+		font-weight: bold;
+	}
+	.text-01:before {
+		content: '';
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin: 0 8px 4px 0;
+		background-image: url(https://weaving-co.jp/dairiten/wp-content/uploads/2020/12/free-icon-call.png);
+		background-size: contain;
+  		vertical-align: middle;
+
+	}
+	.text-02 {
+		margin-top: 8px;
+		color: #4B4B4B;
+		font-weight: 700;
+		letter-spacing: -0.3px;
+	}
+	.text-02-01 {
+		padding: 3px;
+		margin-right: 5px;
+		color: #225096;
+		font-weight: 700;
+		background: #e2e2e2;
+	}
+	.text-02-02 {
+		font-weight: 600;
+    	color: #dc0000;
+	}
+
+}
+/*768pxまで適用する内容*/
+@media screen and (max-width: 768px) {
+	
+	.p-global-nav {
+		display: none;
+	}
+}
+@media screen and (max-width: 900px) {
+	.header-name {
+		display: none;
+	}
+}
+
+
+/* header・　お問い合わせBox */
+.header-contact {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	height: 50px;
+	width: 50px;
+}
+.header-contact a {
+	position: relative;
+	height: 50px;
+    width: 50px;
+	display: block;
+    color: #fff;
+    text-align: center;
+    background: #e20e0e;
+    /* box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.15); */
+}
+
+/*599pxまで適用する内容*/
+@media screen and (max-width: 811px) {
+	.header-tel {
+		width: 50px;
+	}
+	.view-pc {
+		display: none;
+	}
+	.view-sp a {
+			position: relative;
+			display: block;
+			width: 50px;
+			height: 50px;
+			background: #0f4f9b;
+	}
+	/* .view-sp a:before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			background: #073e7f;
+			width: 50px;
+			height: 25px;
+	} */
+	.view-sp a:after {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			margin: auto;
+			width: 50px;
+			height: 50px;
+			background: url(https://weaving-co.jp/dairiten/wp-content/uploads/2020/12/free-icon-call-w.png) center center no-repeat;
+			background-size: 20px;
+	}
+	.header-contact {
+		box-shadow:none;
+	}
+	.header-contact a:before {
+		background: #d30b0b;
+		width: 50px;
+		height: 25px;
+	}
+	.header-contact a:after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		margin: auto;
+		width: 50px;
+		height: 50px;
+		background: url(https://weaving-co.jp/dairiten/wp-content/uploads/2020/12/free-icon-mail-w.png) center center no-repeat;
+		background-size: 22px;
+	}
+}
+/*600px以上で適用する内容*/
+@media screen and (min-width: 812px) {
+	.view-sp {
+		display: none;
+	}
+	.header-contact {
+		width: 175px;
+		padding: 20px;
+
+	}
+	.header-contact a {
+		width: 175px;
+		border-radius: 7px;
+		font-weight: bold;
+	}
+
+	.header-contact a:before {
+		content: "";
+		display: inline-block;
+		top: 50%;
+		width: 25px;
+		height: 25px;
+		background: url(https://weaving-co.jp/dairiten/wp-content/uploads/2020/12/free-icon-mail-w.png) center center no-repeat;
+		background-size: 22px;
+		transform: translateY(50%);
+
+	}
+	.header-contact a:after {
+		content: "お問い合わせ";
+		display: inline-block;
+		margin-top: 7px;
+		width: 130px;
+		height: 16px;
+		font-size: 18px;
+		background-size: contain;
+  		vertical-align: middle;
+
+	}
+}
+
+
+
+
+/*　画面サイズが414pxまではここを読み込む　*/
+@media only screen and (max-width: 414px){
+
+	.l-header__logo a {
+		width: 120px;
+	}
+	.l-header__logo a img {
+		width: 100%;
+	}
+}
+/*　画面サイズが414pxまではここを読み込む　*/
+@media only screen and (max-width: 414px){
+	.l-header__logo a {
+		width: 30%;
+	}
+	.l-header__logo a img {
+		width: 100%;
+	}
+}
+/*　画面サイズが415pxから1200pxまではここを読み込む　*/
+@media only screen and (min-width:415px) {
+
+	.l-header__logo a {
+		width: 160px;
+	}
+	.l-header__logo a img {
+		width: 100%;
+	}
+
+}
+/*1200pxまで適用する内容*/
+@media only screen and (max-width: 1200px) {
+	.l-header, .l-header--large, .l-header.is-fixed {
+		height: auto !important;
+		line-height: 1 !important;
+	}
+}
+
+/*1200px以上で適用する内容*/
+@media only screen and (min-width: 1200px){
+	.p-global-nav {
+		/* display: flex !important; */
+		justify-content: flex-end;
+		align-items: center;
+		font-size: 18px;
+		line-height: 3;
+	}
+}
+
+/* メインビジュアル */
+.main-visual {
+	background-color: #fff;
+}
+.p-index-slider {
+	height: auto !important;
+	min-height: auto;
+	/* max-width: 1200px;
+    max-height: 800px; */
+    margin: 0 auto;
+}
+.p-index-slider .p-index-slider__item {
+	position: static;
+	/* margin-top: 10px; */
+}
+.p-index-slider__item img {
+	height: 100%;
+	width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+	.main-visual {
+		background-color: #F8F8F8;
+	}
+	.p-index-slider .p-index-slider__item {
+		margin-top: 60px;
+	}
+}
+
+
+
+
+
+/* ①コンサルティング会社として */
+.underline-b {
+	background: linear-gradient(transparent 70%, #f4aebb 70%);
+	font-size: 26px;
+	font-weight: bold;
+}
+@media screen and (min-width: 600px) {
+	.underline-b {
+		font-size: 36px;
+	}
+
+}
+
+.bg-img-1 {
+	background-image: url(https://weaving-co.jp/dairiten/wp-content/uploads/2020/12/AdobeStock_202200437-resize.jpg);
+    background-repeat: no-repeat;
+	background-color: #F8F8F8;
+    background-position: bottom -100px right -200px;
+    height: 625px;
+}
+@media screen and (min-width: 600px) {
+	.bg-img-1 {
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* height: 535px; */
+	}
+}
+.p-index-content01__catch {
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+	.p-index-content01__catch {
+		font-size: 26px !important;
+	}
+}
+/* キャッチフレーズ */
+.p-index-content01 {
+	font-weight: bold !important;
+	padding-bottom: 0;
+}
+
+/* ②選べる3コース */
+#cb_1 {
+	background: #0f4f9b;
+	/* margin-top: 30px; */
+	padding-bottom: 30px;
+}
+
+#cb_1 .l-inner,
+#cb_2 .l-inner,
+#cb_3 .l-inner,
+#cb_8 .l-inner,
+.p-index-content02 .l-inner {
+	margin-top: 24px;
+	border: 3px solid #002e64;
+	border-radius: 7px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.p-entry__body {
+	margin-bottom: 0 !important;
+}
+
+.p-index-content01,
+.p-index-content02,
+.p-index-content03,
+.p-index-content04,
+.p-index-content05 {
+	margin-bottom: 30px !important;
+	border: none !important;
+}
+.service-list {
+	margin-bottom: 30px !important;
+}
+@media screen and (min-width: 600px) {
+	#cb_1,
+	.p-index-content01,
+	.p-index-content02,
+	.p-index-content03,
+	.p-index-content04,
+	.p-index-content05,
+	.p-index-content06 {
+		margin-bottom: 100px !important;
+		
+	}
+	
+}
+
+
+.business-ttl {
+	font-size: 26px !important;
+	padding: 40px 30px;
+	margin: 0 auto 10px !important;
+	color:  #0F4F9B;
+	font-weight: bold;
+	text-align: center;
+    background: #E5F1FB;
+    border-bottom: solid 1px #dfe0e2ab;
+}
+.business-ttl .sub-ttl {
+	font-size: 20px;
+	font-weight: bold;
+	width: 160px;
+    margin: 0 auto;
+    line-height: 1.5;
+	border-top: solid 5px #5989cf;
+	border-bottom: solid 5px #5989cf;
+}
+.business-ttl .font-w{
+
+	color: #0F4F9B;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 4px 4px 0px #fff;
+}
+
+
+.business-list {/* dl */
+	background-color: #fff;
+	/* padding-top: 15px; */
+
+}
+
+
+.business-list__item {/* dt */
+	position: relative;
+	height: 50px;
+    padding: 0 15px 0;
+	font-size: 20px;
+	font-weight: 700;
+    text-align: center;
+}
+
+
+.item1:before, .item2:before, .item3:before {
+	position: absolute;
+	height: 50px;
+	width: 180px;
+	color: #fff;
+	background-color: #fd880a;
+	/* border:solid #ca6d0a; */
+	border-width:0px 2px 2px 0px;
+	border-radius: 7px;
+	line-height: 2.7;
+}
+@media screen and (max-width: 599px) {
+	.item1 {
+		margin-top: 30px;
+	}
+	.item1:before, .item2:before, .item3:before {
+		font-size: 18px;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}
+.item1:before {
+	content: '業務提携パートナー';
+}
+.item2:before {
+	content: '商材紹介パートナー';
+}
+.item3:before {
+	content: '販売紹介パートナー';
+}
+
+
+@media screen and (min-width: 600px) {
+	.item1:before, .item2:before, .item3:before {
+		top: 46px;
+		left: 50%;
+		height: 70px;
+		width: 200px;
+		font-size: 20px;
+		line-height: 3.3;
+		transform: translateX(-50%)
+	}
+}
+
+
+.business-list dd {
+	padding: 20px 15px;
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.business-list__item {
+		width: 40% !important;
+	}
+	.item1:before, .item2:before, .item3:before {
+		top: 28px;
+	}
+	dd {
+		/* display: inline-block; */
+		float: right;
+		height: 170px;
+		width: 60% !important;
+		padding: 20px 20px 0 0 !important;
+		box-sizing: border-box;
+		border-bottom: 1px solid #dcdcdc;
+	}
+}
+@media screen and (min-width: 600px) {
+	#cb_1 .l-inner {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		
+	}
+	.p-index-content01__catch {
+		margin-top: 100px;
+		margin-bottom: 50px !important;
+	}
+	#cb_9 {
+		margin-top: 100px;
+	}
+	.p-index-content02, .p-index-content06 {
+		padding-top: 0;
+	}
+
+
+	.business-list__item {/* dt */
+		float: left;
+		height: 170px;
+		width: 30%;
+		padding: 60px 45px 85px;
+		background-color: #fff;
+		line-height: 1 !important;
+		box-sizing: border-box;
+		border-bottom: 1px solid #dcdcdc;
+	}
+	dd {
+		/* display: inline-block; */
+		float: right;
+		height: 170px;
+		width: 70%;
+		background-color: #fff;
+		box-sizing: border-box;
+		border-bottom: 1px solid #dcdcdc;
+	}
+	.p-entry__body dd {
+		margin-bottom: 0;
+	}
+
+	.business-ttl {
+		font-size: 36px !important;
+	}
+
+	.business-ttl .sub-ttl {
+
+		width: 206px;
+		margin: 0 auto;
+		line-height: 1.5;
+		border-top: solid 5px #5989cf;
+		border-bottom: solid 5px #5989cf;
+	}
+}
+@media screen and (min-width: 900px) {
+	dd {
+		padding: 50px 45px 0 0 !important;
+
+	}
+	.business-list__item .item1-top {
+		padding: 65px 45px 0 0 !important;
+	}
+}
+
+
+.p-entry__body dt:last-child {
+	border-bottom: none;
+}
+
+.p-entry__body dd:last-child {
+	/* margin-bottom: 0; */
+	border-bottom: none;
+}
+
+/* ③お客様の声 */
+.p-index-content02__item {
+	margin-bottom: 20px;
+}
+
+.p-index-content02__item-catch {
+	margin-top: 25px;
+	font-weight: bold !important;
+}
+.p-index-content02__item-desc {
+	margin-bottom: 0;
+}
+@media screen and (max-width: 600px) {
+	.p-index-content02__item-desc {
+		min-height: auto !important;
+	}
+}
+
+/* ④パートナー様への5つのお約束 */
+
+.content-box-02 {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center !important;
+}
+
+@media screen and (min-width: 600px) {
+	.content-box {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center !important;
+	}
+}
+
+/* 
+.p-index-content02 {
+	position: relative;
+}
+
+ .content02-ttl:after {
+	position: absolute;
+    top: 3%;
+    left: 50%;
+    content: '不動産会社様';
+    width: 350px;
+    height: 72px;
+    line-height: 2;
+    background-color: #E5F1FB;
+    transform: translateX(-50%);
+}
+.content02-ttl:last-child::after {
+	content: '一般法人・フリーランス';
+	width: 500px;
+} */
+
+
+.p-index-content06__item {
+	width: calc(33.333% - 20px);
+    padding: 30px 20px 0;
+    margin: 10px;
+    /* margin-bottom: 25px !important; */
+    background-color: #fafafa;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.p-index-content06__item-image {
+	position: relative;
+	background-color: #0093C2;
+	overflow: visible;
+}
+.p-index-content06__item-image:after {
+	position: absolute;
+    counter-increment: number 1;
+    content: "0" counter(number) " ";
+    top: 0;
+	left: 48%;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+	color: #2b3287;
+	text-shadow: 4px 4px 0px #fff;
+    transform: translateY(-50%) translateX(-50%);
+}
+.p-index-content06__item-image img {
+	position: absolute;
+	width: 55% !important;
+    top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.p-index-content06__item-catch {
+	font-weight: bold !important;
+	margin-bottom: 25px !important;
+	color: #3093c2;
+}
+@media only screen and (max-width: 767px) {
+	.p-index-content01,
+	.p-index-content02,
+	.p-index-content03,
+	.p-index-content04,
+	.p-index-content05,
+	.p-index-content06 {
+		padding-top: 0 !important;
+	}
+	.p-index-content06__item {
+		width: 100% !important;
+	}
+}
+
+/* ⑤さまざまな商材を取り扱っております！ */
+.service-list {
+	background-color: #fff;
+    /* padding-top: 15px; */
+    border: 3px solid #002e64;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.service-list-ttl {
+    padding: 40px 30px;
+    color: #0F4F9B;
+    font-weight: bold;
+    text-align: center;
+    background: #E5F1FB;
+    border-bottom: solid 1px #dfe0e2ab;
+}
+.servise-list-sub-ttl {
+    font-weight: bold;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+
+}
+.service-list .list {
+	list-style: none;
+	width: 90%;
+	padding-right: 10px;
+	margin: 20px auto;
+}
+@media screen and (max-width: 766px) {
+	.service-list .list {
+		margin: -50px auto 20px;
+	}
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+	.servise-list-sub-ttl {
+		text-align: center;
+		width: 630px;
+		margin: 0 auto;
+		line-height: 1.5;
+	}
+	.service-list .list {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+/* ⑥contact form */
+ #cb_10 .wpcf7 {
+    position: relative;
+	width: 88.28125%;
+	max-width: 1130px;
+	margin: 0 auto !important;
+}
+.wpcf7-form {
+	margin: 0 !important;
+}
+.p-entry__body table {
+    margin: 0 auto;
+}
+.p-entry__body td, .p-entry__body th {
+	border: 1px solid #ddd;
+    padding: 10px 15px;
+    line-height: 2.5;
+}
+
+.contact-ttl {
+    padding: 40px 30px;
+    color: #0F4F9B;
+    font-weight: bold;
+    text-align: center;
+    background: #E5F1FB;
+    border-bottom: solid 1px #dfe0e2ab;
+}
+table {
+	background: #fff;
+    table-layout: fixed;
+}
+.name-label, .input-box {
+	text-align: left;
+    vertical-align: top;
+}
+.name-label {
+	position: relative;
+	padding-top: 19px !important;
+	width: 90%;
+	font-weight: bold !important;
+	line-height: 1.5 !important;
+}
+.red-box {
+	position: absolute;
+	top: 20px;
+	left: auto;
+    margin-left: 10px;
+	padding: 4px 10px;
+	font-size: 12px;
+	line-height: 1;
+	color: #fff;
+	font-weight: bold;
+	background-color: #dc0000;
+	border-radius: 5px;
+}
+.approval-box {
+	display: block;
+	width: auto;
+	text-align: center;
+	margin-top: 35px;
+}
+
+
+@media screen and (max-width: 599px) {
+	.name-label, .input-box {
+		display: block;
+	}
+	.p-entry__body td, .p-entry__body th {
+		width: 89%;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+textarea
+{
+    background-color: #fff;
+    color: #000;
+	width: 70%;
+	border-radius: 3px;
+	/* box-shadow: 2px 2px 4px -2px gray inset */
+}
+
+.wpcf7 {
+    background-color: #fff;
+    border: 3px solid #0F4F9B;
+	width: 90%;
+	max-width: 1130px;
+    margin: 0 auto !important;
+	border-radius: 7px;
+	overflow: hidden;
+}
+.wpcf7 .wpcf7-submit {
+    width: 250px;
+	height: 60px;
+    font-weight: bold;
+    letter-spacing: 12px;
+	background-color: #FD880A;
+	border-radius: 7px;
+	border: groove #c96e0d !important;
+	border-width: 0 2px 2px 0 !important;
+}
+@media screen and (min-width: 600px) {
+
+	table {
+		border: 50px solid #fff;
+		border-width: 35px 50px;
+		border-bottom: 1px solid #dcdcdc;
+	}
+	.name-label {
+		position: relative;
+		padding-top: 19px !important;
+		width: 245px;
+		font-weight: bold !important;
+		line-height: 1.5 !important;
+	}
+	.red-box {
+		top: 19px;
+		left: 190px;
+		padding: 6px 10px;
+	}
+	.wpcf7-radio label {
+		float: left;
+		width: 30%;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		background-color: #fff;
+		color: #000;
+		width: 50%;
+	}
+}
+
+/* フッター */
+.l-footer__inner {
+	display: none;
+}
+.p-footer-blog {
+	display: none;
+}
+
+.p-pagetop {
+	display: none !important;
+}
+
+.l-footer .p-footer-nav a {
+    color: #333333;
+	font-size: 12px;
+}
+.l-footer__logo {
+	width: 60%;
+    margin: 0 auto auto;
+}
+.l-footer__logo img {
+	width: 100%;
+}
+.p-address {
+	margin-top: 30px;
+}
+
+
+@media screen and (min-width: 600px) {
+	.u-clearfix {
+		padding: 30px 0 20px;
+	}
+	.u-hidden-sm {
+		font-size: 12px !important;
+		line-height: 2.5;
+	}
+	.pd-t {
+		padding-top: 10px;
+	}
+	.pd-l {
+		padding-left: 10px;
+	}
+}
+.ds-b {
+	display: block !important;
+}
+
+.u-hidden-sm a {
+	color: #ffffff !important;
+}
+
+
+.p-copyright {
+	text-align: center;
+	font-size: 10px;
+}
+
+@media screen and (max-width: 599px) {
+	.p-address {
+		color: #ffffff;
+	}
+	.p-footer-nav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.p-copyright {
+		height: auto !important;
+		padding: 10px;
+		line-height: 26px !important;
+	}
+	.u-hidden-sm {
+		display: inline-block;
+		font-size: 10px !important;
+
+	}
+	.small {
+		display: block;
+		/* padding-top: 10px; */
+	}
+
+}
+
+@media screen and (min-width: 600px) {
+	.p-copyright {
+		height: auto;
+		margin-top: 100px;
+	}
+	.l-footer__logo {
+		width: 20%;
+		margin: 0 auto auto;
+	}
+}
